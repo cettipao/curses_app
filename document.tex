@@ -1,0 +1,55 @@
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage[dvipsnames]{xcolor}
+
+\title{Arquitectura de Computadoras I \break Parcial II}
+\author{Cetti, Mateo - Nunez, Ivan}
+\date{Junio, 2020}
+
+\lstdefinestyle{customc}{
+  basicstyle=\footnotesize\ttfamily,
+  % commentstyle=\itshape\color{purple!40!black},
+  frame=L,
+  identifierstyle=\color{blue},
+  keywordstyle=\bfseries\color{orange},
+  language=C,
+  stringstyle=\color{OliveGreen},
+  xleftmargin=\parindent
+}
+
+\lstdefinestyle{customarm}{
+  basicstyle=\footnotesize\ttfamily,
+  frame=L,
+  xleftmargin=\parindent
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  Este documento especifica ...
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introduccion}
+
+\section{El principio del fin}
+
+\lstinputlisting[title=Funcion delay en C, style=customc, firstline=3, lastline=5]{led.c}
+
+\begin{lstlisting}[style=customarm]
+main
+        mov r0,r1
+        end
+\end{lstlisting}
+
+\end{document}
